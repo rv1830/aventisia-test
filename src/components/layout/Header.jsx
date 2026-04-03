@@ -4,14 +4,14 @@ import { cn } from '../../lib/utils';
 
 const Header = () => {
   return (
-    <header className="h-16 flex items-center justify-between px-8 bg-secondary-dark border-b border-white/5 shadow-sm text-slate-300">
-      <div className="flex items-center space-x-4">
+    <header className="h-16 flex items-center justify-between px-1 bg-secondary-dark border-b border-white/5 shadow-sm text-slate-300">
+      <div className="flex items-center space-x-2">
         <div className="flex items-center space-x-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:bg-slate-800 transition-all cursor-pointer">
           <span className="text-sm font-semibold text-white">Workspace 1</span>
           <ChevronDown className="w-4 h-4 text-slate-400" />
         </div>
       </div>
-      
+
       <div className="flex-1 max-w-xl mx-8">
         <div className="relative group">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-hover:text-primary transition-colors" size={18} />
@@ -22,7 +22,7 @@ const Header = () => {
           />
         </div>
       </div>
-      
+
       <div className="flex items-center space-x-4">
         <button className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors relative">
           <Bell className="w-5 h-5" />

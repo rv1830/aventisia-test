@@ -36,8 +36,8 @@ const SidebarItem = ({ icon: Icon, label, isActive = false, isStatic = true }) =
     <div
       className={cn(
         "flex items-center px-6 py-2.5 text-sm font-semibold transition-all cursor-pointer group relative",
-        isActive 
-          ? "bg-[#EEF2FF] text-[#4F46E5] border-l-4 border-[#4F46E5]" 
+        isActive
+          ? "bg-[#EEF2FF] text-[#4F46E5] border-l-4 border-[#4F46E5]"
           : "text-slate-500 hover:bg-slate-50 hover:text-slate-800"
       )}
     >
@@ -49,9 +49,9 @@ const SidebarItem = ({ icon: Icon, label, isActive = false, isStatic = true }) =
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-full bg-white flex flex-col text-slate-600 shadow-sm overflow-hidden transition-all duration-300">
+    <div className="w-52 h-full bg-white flex flex-col text-slate-600 shadow-sm overflow-hidden transition-all duration-300">
       {/* Unified Dark Header for Sidebar */}
-      <div className="h-16 flex items-center px-6 bg-secondary-dark border-b border-white/5 mb-4 shrink-0 transition-colors duration-300">
+      <div className="h-16 flex items-center px-4 bg-secondary-dark border-b border-white/5 mb-4 shrink-0 transition-colors duration-300">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
             <Zap className="text-white w-5 h-5" fill="currentColor" />
