@@ -7,7 +7,7 @@ const Header = () => {
     <header className="h-16 flex items-center justify-between px-1 bg-secondary-dark border-b border-white/5 shadow-sm text-slate-300">
       <div className="flex items-center space-x-2">
         <div className="flex items-center space-x-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:bg-slate-800 transition-all cursor-pointer">
-          <span className="text-sm font-semibold text-white">Workspace 1</span>
+          <span className="text-sm font-semibold text-white">Worcspace 1</span>
           <ChevronDown className="w-4 h-4 text-slate-400" />
         </div>
       </div>

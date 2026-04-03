@@ -56,7 +56,7 @@ const Sidebar = () => {
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
             <Zap className="text-white w-5 h-5" fill="currentColor" />
           </div>
-          <span className="text-xl font-bold text-white tracking-tight">Workspace</span>
+          <span className="text-xl font-bold text-white tracking-tight">Worcspace</span>
         </div>
       </div>
 

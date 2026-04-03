@@ -37,8 +37,8 @@ const KnowledgeBase = ({ onCreateNew }) => {
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pb-10">
+      <div className="flex-1 overflow-hidden px-8 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 h-full">
           {mockKB.map((kb) => (
             <KnowledgeBaseCard key={kb.id} {...kb} />
           ))}
