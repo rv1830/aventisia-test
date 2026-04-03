@@ -81,4 +81,4 @@ Aventesia follows the **"Glass & Steel"** design principle:
 
 ---
 
-Built with ❤️ by [Your Name/Team]
+Built with ❤️ by Ravi
