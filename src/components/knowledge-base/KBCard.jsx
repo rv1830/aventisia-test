@@ -3,12 +3,12 @@ import { MoreVertical, Calendar } from 'lucide-react';
 
 const KnowledgeBaseCard = ({ title, description, createdOn }) => {
   return (
-    <div className="group bg-white rounded-xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/20">
+    <div className="group bg-white rounded-xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/20 cursor-pointer">
       <div className="flex items-start justify-between mb-4">
         <h4 className="text-lg font-bold text-slate-800 group-hover:text-primary transition-colors pr-2 truncate">
           {title}
         </h4>
-        <button className="text-slate-400 hover:text-slate-600 transition-colors p-1.5 hover:bg-slate-50 rounded-lg">
+        <button className="text-slate-400 hover:text-slate-600 transition-colors p-1.5 hover:bg-slate-50 rounded-lg cursor-pointer">
           <MoreVertical className="w-5 h-5 shrink-0" />
         </button>
       </div>

@@ -28,7 +28,7 @@ const KnowledgeBase = ({ onCreateNew }) => {
             </div>
             <button
               onClick={onCreateNew}
-              className="px-6 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl text-sm font-bold shadow-lg shadow-primary/20 transition-all active:scale-95 flex items-center space-x-2"
+              className="px-6 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl text-sm font-bold shadow-lg shadow-primary/20 transition-all active:scale-95 flex items-center space-x-2 cursor-pointer"
             >
               <Plus className="w-5 h-5" />
               <span>Create New</span>

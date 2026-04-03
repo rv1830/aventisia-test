@@ -2,33 +2,37 @@ import React from 'react';
 import { X, Info, Plus, ChevronDown } from 'lucide-react';
 import { cn } from '../../lib/utils';
 const CreateKBModal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-
   return (
     <div 
-      className="fixed inset-0 z-50 flex justify-end bg-slate-900/40 backdrop-blur-[2px] transition-all duration-300"
+      className={cn(
+        "fixed inset-0 z-50 flex justify-end bg-slate-900/40 backdrop-blur-[2px] transition-all duration-300 ease-in-out",
+        isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+      )}
       onClick={onClose}
     >
       <div 
-        className="bg-white w-full max-w-md h-full shadow-2xl border-l border-slate-200 overflow-hidden flex flex-col transition-all duration-500 ease-in-out translate-x-0"
+        className={cn(
+          "bg-white w-full max-w-md h-full shadow-2xl border-l border-slate-200 overflow-hidden flex flex-col transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]",
+          isOpen ? "translate-x-0" : "translate-x-full"
+        )}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between px-8 py-6 border-b border-slate-100 bg-white sticky top-0 z-10">
           <div>
-            <h3 className="text-xl font-bold text-slate-800">Create New Knowledge Base</h3>
+            <h3 className="text-xl font-bold text-slate-800 tracking-tight">Create New Knowledge Base</h3>
             <p className="text-sm text-slate-500 mt-1 font-medium">Best for quick answers from documents, websites and text files.</p>
           </div>
           <button 
             onClick={onClose}
-            className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-xl transition-all"
+            className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-xl transition-all cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
         
         {/* Form Content */}
-        <form className="flex-1 overflow-y-auto p-8 space-y-8">
+        <form className="flex-1 overflow-y-auto p-8 space-y-8 scrollbar-hide">
           <div>
             <label className="block text-sm font-bold text-slate-700 mb-2.5">
               Name <span className="text-slate-400 font-medium">(Cannot be edited later)</span> <span className="text-red-500">*</span>
@@ -83,12 +87,12 @@ const CreateKBModal = ({ isOpen, onClose }) => {
             </div>
           </div>
         </form>
-
+ 
         {/* Footer Area with Button */}
         <div className="px-8 py-6 border-t border-slate-100 bg-white sticky bottom-0 z-10 flex justify-end">
             <button 
               type="button"
-              className="px-10 py-2.5 bg-[#4F46E5] hover:bg-[#4338CA] text-white rounded-xl text-sm font-bold shadow-lg shadow-primary/20 transition-all active:scale-95 flex items-center space-x-2"
+              className="px-10 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl text-sm font-bold shadow-lg shadow-primary/20 transition-all active:scale-95 flex items-center space-x-2 cursor-pointer"
               onClick={onClose}
             >
               <span>Create</span>
