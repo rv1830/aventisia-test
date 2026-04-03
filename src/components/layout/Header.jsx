@@ -4,17 +4,17 @@ import { cn } from '../../lib/utils';
 
 const Header = () => {
   return (
-    <header className="h-14 flex items-center justify-between px-6 bg-[#0B0B1E]   shadow-1xl text-slate-300 border border-white/5 relative z-10">
+    <header className="h-14 flex items-center justify-between px-6 bg-secondary text-slate-300 border border-white/5 relative z-10">
       <div className="flex items-center space-x-6 shrink-0">
         <div className="flex items-center space-x-2">
           <div className="w-7 h-7 rounded bg-[#5D5FEF] flex items-center justify-center shadow-lg shadow-[#5D5FEF]/20">
             <Zap className="text-white w-4 h-4" fill="currentColor" />
           </div>
-          <span className="text-lg font-bold text-white tracking-tight">Worcspace</span>
+          <span className="text-lg font-bold text-white tracking-tight">Workspace</span>
         </div>
-
-        <div className="flex items-center space-x-2 bg-[#1A1A35] px-3 py-1 rounded-lg border border-white/5 hover:bg-[#252545] transition-all cursor-pointer">
-          <span className="text-[11px] font-medium text-slate-300">Worcspace 1</span>
+ 
+        <div className="flex items-center space-x-2 bg-secondary-light/20 px-3 py-1 rounded-lg border border-white/5 hover:bg-secondary-light/40 transition-all cursor-default">
+          <span className="text-[11px] font-medium text-slate-300">Workspace 1</span>
           <ChevronDown className="w-3.5 h-3.5 text-slate-500" />
         </div>
       </div>
@@ -34,11 +34,11 @@ const Header = () => {
       </div>
 
       <div className="flex items-center space-x-4 shrink-0">
-        <button className="p-1.5 hover:bg-white/5 rounded-lg transition-colors relative">
+        <div className="p-1.5 rounded-lg transition-colors relative cursor-default">
           <Bell className="w-5 h-5 text-slate-400" />
-          <div className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-[#0B0B1E]"></div>
-        </button>
-        <div className="w-8 h-8 rounded-full bg-[#5D5FEF] flex items-center justify-center text-[11px] font-bold text-white shadow-lg shadow-[#5D5FEF]/20 cursor-pointer hover:scale-105 transition-transform">
+          <div className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-secondary"></div>
+        </div>
+        <div className="w-8 h-8 rounded-full bg-[#5D5FEF] flex items-center justify-center text-[11px] font-bold text-white shadow-lg shadow-[#5D5FEF]/20 cursor-default">
           GK
         </div>
       </div>
