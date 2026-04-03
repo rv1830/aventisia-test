@@ -12,11 +12,11 @@ const KnowledgeBaseCard = ({ title, description, createdOn }) => {
           <MoreVertical className="w-5 h-5 shrink-0" />
         </button>
       </div>
-      
+
       <p className="text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3 min-h-[4.5rem]">
         {description}
       </p>
-      
+
       <div className="flex items-center text-slate-400 text-xs font-medium uppercase tracking-tight">
         <Calendar className="w-3.5 h-3.5 mr-2 text-slate-300" />
         Created on: <span className="ml-1 text-slate-600">{createdOn}</span>
