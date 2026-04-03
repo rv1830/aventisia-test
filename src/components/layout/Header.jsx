@@ -1,37 +1,45 @@
 import React from 'react';
-import { Search, Bell, ChevronDown, User } from 'lucide-react';
+import { Search, Bell, ChevronDown, Zap } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const Header = () => {
   return (
-    <header className="h-16 flex items-center justify-between px-1 bg-secondary-dark border-b border-white/5 shadow-sm text-slate-300">
-      <div className="flex items-center space-x-2">
-        <div className="flex items-center space-x-2 bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:bg-slate-800 transition-all cursor-pointer">
-          <span className="text-sm font-semibold text-white">Worcspace 1</span>
-          <ChevronDown className="w-4 h-4 text-slate-400" />
+    <header className="h-14 flex items-center justify-between px-6 bg-[#0B0B1E]   shadow-1xl text-slate-300 border border-white/5 relative z-10">
+      <div className="flex items-center space-x-6 shrink-0">
+        <div className="flex items-center space-x-2">
+          <div className="w-7 h-7 rounded bg-[#5D5FEF] flex items-center justify-center shadow-lg shadow-[#5D5FEF]/20">
+            <Zap className="text-white w-4 h-4" fill="currentColor" />
+          </div>
+          <span className="text-lg font-bold text-white tracking-tight">Worcspace</span>
+        </div>
+
+        <div className="flex items-center space-x-2 bg-[#1A1A35] px-3 py-1 rounded-lg border border-white/5 hover:bg-[#252545] transition-all cursor-pointer">
+          <span className="text-[11px] font-medium text-slate-300">Worcspace 1</span>
+          <ChevronDown className="w-3.5 h-3.5 text-slate-500" />
         </div>
       </div>
 
-      <div className="flex-1 max-w-xl mx-8">
+      <div className="flex-1 max-w-2xl px-8">
         <div className="relative group">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-hover:text-primary transition-colors" size={18} />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 group-focus-within:text-indigo-400 transition-colors" />
           <input
             type="text"
             placeholder="Search..."
-            className="w-full bg-slate-800/30 border border-slate-700/30 hover:border-slate-600 focus:border-primary focus:bg-slate-800/50 text-white rounded-lg pl-10 pr-4 py-2 text-sm outline-none transition-all"
+            className="w-full bg-[#1A1A35] border border-white/5 rounded-lg py-1.5 pl-10 pr-12 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-indigo-500/50 transition-all"
           />
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded border border-white/10 bg-[#252545] text-[10px] text-slate-500 font-mono">
+            ⌘K
+          </div>
         </div>
       </div>
 
-      <div className="flex items-center space-x-4">
-        <button className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors relative">
-          <Bell className="w-5 h-5" />
-          <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-secondary-dark shadow-sm"></span>
+      <div className="flex items-center space-x-4 shrink-0">
+        <button className="p-1.5 hover:bg-white/5 rounded-lg transition-colors relative">
+          <Bell className="w-5 h-5 text-slate-400" />
+          <div className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-[#0B0B1E]"></div>
         </button>
-        <div className="flex items-center space-x-3 border-l border-slate-800 pl-4">
-          <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-primary/20 cursor-pointer">
-            RK
-          </div>
+        <div className="w-8 h-8 rounded-full bg-[#5D5FEF] flex items-center justify-center text-[11px] font-bold text-white shadow-lg shadow-[#5D5FEF]/20 cursor-pointer hover:scale-105 transition-transform">
+          GK
         </div>
       </div>
     </header>

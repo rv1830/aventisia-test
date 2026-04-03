@@ -50,17 +50,7 @@ const SidebarItem = ({ icon: Icon, label, isActive = false, isStatic = true }) =
 const Sidebar = () => {
   return (
     <div className="w-52 h-full bg-white flex flex-col text-slate-600 shadow-sm overflow-hidden transition-all duration-300">
-      {/* Unified Dark Header for Sidebar */}
-      <div className="h-16 flex items-center px-4 bg-secondary-dark border-b border-white/5 mb-4 shrink-0 transition-colors duration-300">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
-            <Zap className="text-white w-5 h-5" fill="currentColor" />
-          </div>
-          <span className="text-xl font-bold text-white tracking-tight">Worcspace</span>
-        </div>
-      </div>
-
-      <div className="flex-1 overflow-y-auto py-2 scrollbar-hide border-r border-slate-100">
+      <div className="flex-1 overflow-y-auto py-6 scrollbar-hide border-r border-slate-100">
         <SidebarSection title="My Projects">
           <SidebarItem icon={UserCircle} label="Agents" />
           <SidebarItem icon={Cpu} label="AI Models" />
