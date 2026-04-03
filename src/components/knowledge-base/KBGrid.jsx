@@ -14,7 +14,7 @@ const KnowledgeBase = ({ onCreateNew }) => {
 
   return (
     <div className="flex-1 flex flex-col min-h-0 bg-background overflow-hidden relative">
-      <div className="px-8 py-4 bg-white/50 border-b border-slate-200/60 backdrop-blur-sm z-10 sticky top-0">
+      <div className="px-8 py-2.5 bg-white/50 border-b border-slate-200/60 backdrop-blur-sm z-10 sticky top-0">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-black text-slate-800 tracking-tight">Knowledge Base</h2>
           <div className="flex items-center space-x-4">
@@ -37,15 +37,15 @@ const KnowledgeBase = ({ onCreateNew }) => {
         </div>
       </div>
 
-      <div className="flex-1 overflow-hidden px-8 py-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 h-full">
+      <div className="flex-1 overflow-hidden px-8 py-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 h-fit pt-1">
           {mockKB.map((kb) => (
             <KnowledgeBaseCard key={kb.id} {...kb} />
           ))}
         </div>
       </div>
 
-      <div className="h-16 flex items-center justify-between px-8 bg-white border-t border-slate-100/80 shadow-md shadow-slate-200/20 z-10 relative">
+      <div className="h-14 flex items-center justify-between px-8 bg-white border-t border-slate-100/80 shadow-md shadow-slate-200/20 z-10 relative">
         <div className="text-sm font-semibold text-slate-500">
           {mockKB.length} Total items
         </div>
